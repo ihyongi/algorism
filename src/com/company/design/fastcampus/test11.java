@@ -1,5 +1,7 @@
 package com.company.design.fastcampus;
 
+import java.util.HashMap;
+
 public class test11 {
 
     public Slot[] hashTable;
@@ -76,5 +78,30 @@ public class test11 {
         } else {
             return null;
         }
+    }
+
+    public static void main(String[] args) {
+
+        test11 mainObject = new test11(20);
+        mainObject.saveData("DaveLee", "01022223333");
+        mainObject.saveData("fun-coding", "01033334444");
+        mainObject.saveData("David", "01044445555");
+        mainObject.saveData("Dave", "01055556666");
+        mainObject.getData("fun-coding");
+        System.out.println("mainObject.getData(\"fun-coding\") = " + mainObject.getData("fun-coding"));
+
+        HashMap<Integer, String> map1 = new HashMap();
+        map1.put(1, "사과");
+        map1.put(2, "바나나");
+        map1.put(3, "포도");
+
+        HashMap<String, String> map2 = new HashMap();
+        map2.put("DaveLee", "01033334444");
+        map2.put("Dave", "01032221111");
+        map2.put("David", "0104445555");
+
+        System.out.println("map1.get(2) = " + map1.get(2));
+        System.out.println("map2.get(Dave) = " + map2.get("Dave"));
+        //배열의 경우에는 O(n) << 해시테이블 케이스에서 검색할때는 O(1)
     }
 }
