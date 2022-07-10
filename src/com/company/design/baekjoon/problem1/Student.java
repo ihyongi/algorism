@@ -1,4 +1,4 @@
-package com.company.design.baekjoon100.problem1;
+package com.company.design.baekjoon.problem1;
 
 /**
  * 1. 학생정보들을 저장하고, 학생이름으로 검색했을때 학번을 출력하는 프로그램 작성.

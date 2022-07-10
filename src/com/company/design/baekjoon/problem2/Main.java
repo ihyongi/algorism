@@ -1,4 +1,4 @@
-package com.company.design.baekjoon100.problem2;
+package com.company.design.baekjoon.problem2;
 
 public class Main {
     /**

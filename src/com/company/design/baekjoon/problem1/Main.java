@@ -1,4 +1,4 @@
-package com.company.design.baekjoon100.problem1;
+package com.company.design.baekjoon.problem1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
